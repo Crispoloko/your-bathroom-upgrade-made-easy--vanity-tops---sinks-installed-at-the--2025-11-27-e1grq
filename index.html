@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upgrade your bathroom with premium vanity tops and sinks. Expert installation included. Budget-friendly packages available.">
+    <meta name="keywords" content="bathroom vanity, bathroom sinks, bathroom upgrade, vanity tops, home renovation">
+    <meta name="author" content="Bathroom Upgrade Solutions">
+    <title>Your Bathroom Upgrade Made Easy: Vanity Tops & Sinks Installed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .bg-gradient-dark {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(102, 126, 234, 0.3);
+        }
+        
+        .button-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .button-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(102, 126, 234, 0.5);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-question:hover {
+            color: #667eea;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .benefit-image {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .benefit-card:hover .benefit-image {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .testimonial-card:hover {
+            border-color: rgba(102, 126, 234, 0.5);
+            box-shadow: 0 20px 25px -5px rgba(102, 126, 234, 0.2);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+        
+        .mobile-menu {
+            position: absolute;
+            top: full;
+            left: 0;
+            right: 0;
+            background-color: #0f172a;
+            border-top: 1px solid rgba(102, 126, 234, 0.2);
+            z-index: 40;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <i class="fas fa-bath text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold hidden sm:inline">Bathroom Pro</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Home</a>
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">About</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">FAQ</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-white text-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500 rounded-lg p-2" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden absolute top-full left-0 right-0 bg-gray-800 border-t border-gray-700 flex-col">
+                <a href="#home" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium border-b border-gray-700">Home</a>
+                <a href="#features" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium border-b border-gray-700">Features</a>
+                <a href="#benefits" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium border-b border-gray-700">Benefits</a>
+                <a href="#about" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium border-b border-gray-700">About</a>
+                <a href="#testimonials" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium border-b border-gray-700">Testimonials</a>
+                <a href="#faq" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium border-b border-gray-700">FAQ</a>
+                <a href="#contact" class="px-4 sm:px-6 lg:px-8 py-3 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors duration-300 font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background-image: url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1600&h=900&fit=crop&q=80'); background-size: cover; background-position: center; opacity: 0.25;"></div>
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                Your Bathroom Upgrade Made Easy
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto">
+                Vanity Tops & Sinks Installed with Expert Installation Included
+            </p>
+            <p class="text-lg md:text-xl text-purple-300 mb-12 leading-relaxed max-w-2xl mx-auto font-medium">
+                Upgrade your space, with a package that fits your budget.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://taskflow-5phuensd.adaptive.ai/lead" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center justify-center px-8 py-4 bg-gradient-primary text-white font-bold text-lg rounded-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                    Get Your Free Quote <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#features" class="button-hover inline-flex items-center justify-center px-8 py-4 bg-gray-800 text-white font-bold text-lg rounded-lg border-2 border-purple-500 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                    Learn More <i class="fas fa-chevron-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 md:py-24 bg-gray-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    See Your Bathroom Transformation
+                </h2>
+                <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto">
+                    Watch how our expert installation process brings your bathroom dreams to life
+                </p>
+            </div>
+            
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/O8XndhsITHo?rel=0&modestbranding=1" allowfullscreen="" loading="lazy" title="Bathroom Upgrade Installation"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    Why Choose Our Service
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+                    Premium bathroom solutions designed for your lifestyle and budget
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Remnants -->
+                <div class="feature-card card-hover bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-gem text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Premium Remnants</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Access high-quality vanity tops and sinks from premium collections at fraction of the cost. Perfect for those seeking luxury without the premium price tag.
+                    </p>
+                </div>
+                
+                <!-- Feature 2: Budget-Friendly Packages -->
+                <div class="feature-card card-hover bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-piggy-bank text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Budget-Friendly Packages</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Flexible payment plans and affordable package options designed to fit any budget. Start your bathroom upgrade today without breaking the bank.
+                    </p>
+                </div>
+                
+                <!-- Feature 3: Expert Installation -->
+                <div class="feature-card card-hover bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-hammer text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Expert Installation</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Licensed and certified professionals handle every aspect of installation. Guaranteed quality workmanship with comprehensive warranty coverage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    Transform Your Bathroom Today
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+                    Experience the difference quality installation and premium materials make
+                </p>
+            </div>
+
+            <!-- Benefit 1: Save Money Fast -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16 benefit-card">
+                <div class="order-2 lg:order-1">
+                    <div class="benefit-image rounded-xl overflow-hidden shadow-xl h-96">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&q=80" alt="Save Money" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Save Money Fast</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Our remnant collection and bulk purchasing power mean you get premium quality at unbeatable prices. Save 30-50% compared to retail pricing while getting the same beautiful results.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Discounted pricing on premium materials</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Flexible payment plans available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">No hidden fees or surprise costs</span>
+                        </li>
+                    </ul>
+                    <a href="https://taskflow-5phuensd.adaptive.ai/lead" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center px-6 py-3 bg-gradient-primary text-white font-bold rounded-lg hover:shadow-lg">
+                        Get Your Quote <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Benefit 2: Expert Installation Included -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16 benefit-card">
+                <div class="benefit-image rounded-xl overflow-hidden shadow-xl h-96">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop&q=80" alt="Expert Installation" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Expert Installation Included</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Our certified installation team brings decades of combined experience. Every project is handled with precision, care, and attention to detail ensuring perfect results every time.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Licensed and insured professionals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">5-year workmanship warranty</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Clean, professional installation process</span>
+                        </li>
+                    </ul>
+                    <a href="https://taskflow-5phuensd.adaptive.ai/lead" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center px-6 py-3 bg-gradient-primary text-white font-bold rounded-lg hover:shadow-lg">
+                        Schedule Installation <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Upgrade Easy -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center benefit-card">
+                <div class="order-2 lg:order-1">
+                    <div class="benefit-image rounded-xl overflow-hidden shadow-xl h-96">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop&q=80" alt="Easy Upgrade" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Upgrade Easy</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        From consultation to completion, we make the entire process simple and stress-free. Our streamlined approach means minimal disruption to your daily life and maximum satisfaction.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Free in-home consultation and design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Fast turnaround time (7-14 days)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mr-4 mt-1 text-xl"></i>
+                            <span class="text-gray-300">Dedicated project manager support</span>
+                        </li>
+                    </ul>
+                    <a href="https://taskflow-5phuensd.adaptive.ai/lead" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center px-6 py-3 bg-gradient-primary text-white font-bold rounded-lg hover:shadow-lg">
+                        Start Your Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    About Bathroom Pro
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+                    Your trusted partner in bathroom renovations for over a decade
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="rounded-xl overflow-hidden shadow-xl h-96">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop&q=80" alt="About Us" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        Founded in 2012, Bathroom Pro started with a simple mission: to make premium bathroom upgrades accessible to homeowners of all budgets. What began as a small family operation has grown into one of the region's most trusted bathroom renovation specialists. Over the past 12 years, we've completed thousands of successful projects, from modest vanity upgrades to complete bathroom transformations. Our reputation is built on honest pricing, exceptional craftsmanship, and unwavering commitment to customer satisfaction.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Today, we're dedicated to revolutionizing how people approach bathroom renovations. We believe that everyone deserves a beautiful, functional bathroom regardless of budget constraints. Our core values of integrity, quality, and innovation drive everything we do. We invest in the latest installation techniques, maintain rigorous quality standards, and continuously train our team to deliver excellence. Our vision is to be the most trusted bathroom renovation partner in the region, known for transforming spaces and exceeding expectations on every single project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    Loved by Homeowners
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+                    See what our satisfied customers have to say about their bathroom transformations
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-700 rounded-xl p-8 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Sarah Mitchell</h4>
+                            <p class="text-gray-400">Homeowner, Portland</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "I was amazed at the quality and price! The team completed my bathroom vanity installation in just one day. The craftsmanship is impeccable and they cleaned up everything perfectly. I've already recommended Bathroom Pro to three of my neighbors!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-700 rounded-xl p-8 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">James Rodriguez</h4>
+                            <p class="text-gray-400">Property Manager, Seattle</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Managing multiple properties, I needed a reliable contractor. Bathroom Pro has been fantastic! They saved us thousands on our renovation budget while maintaining premium quality. Their attention to detail is remarkable, and their team is always professional and punctual."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-700 rounded-xl p-8 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Emily Thompson</h4>
+                            <p class="text-gray-400">Interior Designer, Vancouver</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "As a designer, I'm picky about who I recommend. Bathroom Pro exceeded all my expectations. They executed my vision perfectly with premium remnants that look absolutely stunning. My clients love their new bathrooms!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-gray-700 rounded-xl p-8 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Michael Chen</h4>
+                            <p class="text-gray-400">Real Estate Investor, Tacoma</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "I've used Bathroom Pro for five rental properties now. The ROI on these bathroom upgrades has been incredible. They consistently deliver beautiful results on time and within budget. This is my go-to contractor for all bathroom renovations."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl">
+                    Everything you need to know about our bathroom upgrade services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-750 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                        <span class="text-lg md:text-xl font-bold text-left">How long does the installation process take?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-300 leading-relaxed">
+                            Most bathroom vanity and sink installations are completed within 1-3 days, depending on the complexity of your project. For standard single-sink installations, we typically complete the work in just one day. Our team works efficiently while maintaining the highest quality standards. We'll provide you with a specific timeline during your free in-home consultation so you can plan accordingly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-750 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                        <span class="text-lg md:text-xl font-bold text-left">What warranty do you provide on your work?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-300 leading-relaxed">
+                            We stand behind our work with a comprehensive 5-year workmanship warranty on all installations. This covers any issues related to installation quality, including plumbing connections, sealing, and structural integrity. Additionally, all materials come with manufacturer warranties ranging from 1-10 years depending on the product. We also offer optional extended warranty plans for added peace of mind.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-750 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                        <span class="text-lg md:text-xl font-bold text-left">What are remnants and why are they so affordable?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-300 leading-relaxed">
+                            Remnants are excess inventory from large-scale projects and overstock from manufacturers. These are brand-new, high-quality vanity tops and sinks that didn't sell at retail prices. We partner directly with manufacturers to source these premium products at significant discounts. You get the same quality and durability as full-price items, but at 30-50% less cost. Perfect for homeowners who want luxury finishes without the luxury price tag.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between hover:bg-gray-750 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                        <span class="text-lg md:text-xl font-bold text-left">Do you offer financing options?</span>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-700">
+                        <p class="text-gray-300 leading-relaxed">
+                            Yes! We offer flexible financing options to fit your budget. We work with several trusted lenders to provide competitive rates with terms ranging from 12 to 60 months. Our team can discuss financing options during your consultation, and we can often get you approved on the same day. We also offer package deals that bundle materials and installation for additional savings. Contact us today to learn about all available payment options.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&h=900&fit=crop&q=80'); background-size: cover; background-position: center; opacity: 0.25;"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
+                Ready to Transform Your Bathroom?
+            </h2>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Join thousands of satisfied homeowners who've upgraded their bathrooms with our expert installation and affordable pricing.
+            </p>
+            <a href="https://taskflow-5phuensd.adaptive.ai/lead" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center justify-center px-10 py-5 bg-gradient-primary text-white font-bold text-xl rounded-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-purple-500">
+                Get Your Free Quote Today <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+                    Get In Touch
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl">
+                    Have questions? Our team is here to help
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Email</h3>
+                                <a href="mailto:contact@backupservices.pro" class="text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                                    contact@backupservices.pro
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Phone</h3>
+                                <p class="text-gray-300">Available Monday-Friday, 8AM-6PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Service Area</h3>
+                                <p class="text-gray-300">Pacific Northwest & Beyond</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 border-t border-gray-700">
+                        <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300">
+                                <i class="fab fa-facebook-f text-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300">
+                                <i class="fab fa-twitter text-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300">
+                                <i class="fab fa-linkedin-in text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Form -->
+                <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                    <form class="space-y-6" action="https://taskflow-5phuensd.adaptive.ai/lead" method="GET" target="_blank">
+                        <div>
+                            <label for="name" class="block text-sm font-bold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-bold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-bold mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300" placeholder="(555) 123-4567">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 resize-none" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="button-hover w-full px-6 py-3 bg-gradient-primary text-white font-bold rounded-lg hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-purple-500">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-bath text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Bathroom Pro</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Transforming bathrooms with premium materials and expert installation since 2012.
+                    </p>
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2024 Bathroom Pro. All rights reserved.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="mailto:contact@backupservices.pro" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 sm:mb-0">
+                    Made with <i class="fas fa-heart text-red-500"></i> for homeowners everywhere
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
+                        <i class="fab fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Instagram">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
